@@ -950,7 +950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 5
+  jumpForce: 7
   turnSpeed: 10
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
@@ -962,7 +962,7 @@ MonoBehaviour:
   gliderMoveSpeed: 7
   gliderMaxTime: 5
   gliderTimeLeft: 0
-  isGliding: 0
+  isGliding: 1
   isGrounded: 1
   coinCount: 0
   totalCoins: 5
@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 1607415527}
   m_Layer: 0
   m_Name: GenPoint
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

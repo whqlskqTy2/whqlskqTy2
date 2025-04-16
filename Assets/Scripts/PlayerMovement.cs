@@ -45,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
 
         coyoteTimeCounter = 0;
 
+        gliderTimeLeft = gliderMaxTime;
+
     }
 
     // Update is called once per frame
@@ -155,15 +157,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Ground")
-        {
-            isGrounded = true;
-        }
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Coin"))
@@ -179,7 +172,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision2D collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
@@ -199,7 +192,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            realGround = true;
+            realGround = false;
         }
     }
 
